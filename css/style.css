@@ -1,36 +1,81 @@
 /* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-color: #f2f2f2;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar {
     max-width: 1170px;
     margin: 0 auto;
-    font-size: 14px;
-  }
-  
-  header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
-    font-family: 'Times New Roman', Times, serif;
-  }
-  
-  h1 {
+}
+
+.site-title {
+    font-family: 'Times New Roman', serif;
     font-size: 50px;
-  }
-  
-  nav ul {
-    list-style-type: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.site-title::before,
+.site-title::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 1px;
+    background-color: #888;
+}
+
+.site-title::before {
+    left: -60px;
+}
+
+.site-title::after {
+    right: -60px;
+}
+
+nav ul {
     display: flex;
-    gap: 15px;
-  }
-  
-  nav ul li {
-    display: inline-block;
-  }
-  
-  nav ul li a {
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: #000000;
+    font-weight: normal;
+    color: #555;
+}
+
+nav ul li a:hover {
+    color: #333;
+}
+
+nav ul li a.active {
+    font-weight: bold;
+    color: #333;
+}
+
+.nav a:hover {
+    text-decoration: underline;
   }
   
   .container {
