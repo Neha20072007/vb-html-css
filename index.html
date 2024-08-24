@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>VB HTML and CSS Final Assignment</title>
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VB HTML and CSS Final Assignment</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-	<header>
+    <header>
         <div class="navbar">
             <h1 class="site-title">CEO BLOG</h1>
             <nav>
@@ -21,78 +21,90 @@
             </nav>
         </div>
     </header>
-	
-	<section class="ceo-profile">
+    
+    <section class="ceo-profile">
         <div class="ceo-info">
             <img src="images/steve.jpg" alt="CEO Image" class="ceo-image">
             <div class="ceo-details">
                 <h2>Steve Jobs</h2>
-				<h3>CEO, Apple INC</h3>
-                <p>Lorem ipsum dolor sit amet, mea altera maiorum signiferumque ex, mazim invenire vim ad. Ignota causae ocurreret at vim, te diam quas disputando eos, aeque volutpat gubergren id mel. Causae eirmod aliquando qui ei, te ius putant labores. Ad mel sale vidisse, eu nam mollis volumus mentitum. Vocibus offendit officiis his no, cu tollit saperet accusamus vim</p>
+                <h3>CEO, Apple INC</h3>
+                <p>Lorem ipsum dolor sit amet, mea altera maiorum signiferumque ex, mazim invenire vim ad...</p>
             </div>
-			<a href="#" class="social-icons"><img src="images\icon-fb.png" alt="Facebook"></a>
-            <a href="#" class="social-icons"><img src="images\icon-twitter.png" alt="Twitter"></a>
-            <a href="#" class="social-icons"><img src="images\icon-linkedin.png" alt="LinkedIn"></a>
+        </div>
+        <div class="social-icons">
+            <a href="#"><img src="images/icon-fb.png" alt="Facebook"></a>
+            <a href="#"><img src="images/icon-twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="images/icon-linkedin.png" alt="LinkedIn"></a>
         </div>
     </section>
 
     <section class="main-content">
-        <div class="categories">
-			<h2>Categories</h2>
-			<form>
-			  <label><input type="radio" name="category" value="Communication">Communication</label><br>
-			  <label><input type="radio" name="category" value="Leadership">Leadership</label><br>
-			  <label><input type="radio" name="category" value="Habits">Habits</label><br>
-			  <label><input type="radio" name="category" value="Inspiration">Inspiration</label>
-			</form>
-		  </div>
-	
-		  <div class="important-links">
-			<h2>Important Links</h2>
-			<ul>
-			  <li><a href="#">Link 1</a></li>
-			  <li><a href="#">Link 2</a></li>
-			  <li><a href="#">Link 3</a></li>
-			</ul>
-		  </div>
-		</aside>
-	
-		<main class="right-column">
-		  <div class="post">
-			<img src="images/blog-photo.jpg" alt="Blog Photo">
-			<h2>Latest Post</h2>
-			<p>Category: Leadership</p>
-			<h3>Blog Title</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
-			<div class="post-interaction">
-			  <button>Like</button>
-			  <button>Share</button>
-			  <button>Comment</button>
-			</div>
-		  </div>
-	
-		  <div class="related-posts">
-			<div class="post">
-			  <img src="images/blog-photo.jpg" alt="Related Post 1">
-			  <h4>Related Post 1</h4>
-			</div>
-			<div class="post">
-			  <img src="images/blog-photo.jpg" alt="Related Post 2">
-			  <h4>Related Post 2</h4>
-			</div>
-			<div class="post">
-			  <img src="images/blog-photo.jpg" alt="Related Post 3">
-			  <h4>Related Post 3</h4>
-			</div>
-		  </div>
-	
-		  <footer>
-			<button>Previous</button>
-			<button>Next</button>
-		  </footer>
-		</main>
-	  </div>
+        <div class="left-column">
+            <div class="categories">
+                <h1>Categories</h1>
+                <form>
+                    <label><input type="radio" name="category" value="Communication"> Communication</label><br>
+                    <label><input type="radio" name="category" value="Leadership"> Leadership</label><br>
+                    <label><input type="radio" name="category" value="Habits"> Habits</label><br>
+                    <label><input type="radio" name="category" value="Emotional States"> Emotional States</label><br>
+                    <label><input type="radio" name="category" value="Inspiration"> Inspiration</label><br>
+                    <label><input type="radio" name="category" value="Journaling"> Journaling</label><br>
+                    <label><input type="radio" name="category" value="Travel"> Travel</label><br>
+                    <label><input type="radio" name="category" value="Nature"> Nature</label><br>
+                </form>
+            </div>
+        
+            <div class="important-links">
+                <h1>Important Links</h1>
+                <ul>
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="right-column">
+            <div class="post">
+                <img src="images/blog-photo.jpg" alt="Blog Photo">
+                <h2>Latest Post</h2>
+                <span class="post-category">Category: Leadership</span>
+                <h3>You Haven’t Hit Your Peak Yet!</h3>
+                <p>My friend Harvey Mackay has a brand new book out this month titled "You Haven’t Hit Your Peak Yet!"...</p>
+                <a href="#" class="read-more">Read Full Article</a>
+                <div class="post-interaction">
+                    <button><i class="fas fa-thumbs-up"></i> Like</button>
+                    <button><i class="fas fa-share"></i> Share</button>
+                    <button><i class="fas fa-comment"></i> Comment</button>
+                </div>
+            </div>
+        
+            <div class="comments-section">
+                <div class="comment">
+                    <img src="images/user1.jpg" alt="User 1">
+                    <div class="comment-content">
+                        <p><strong>Maksum Jones</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <div class="comment-actions">
+                            <span>Like</span> | <span>Reply</span> | <span>4 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="comment">
+                    <img src="images/user2.jpg" alt="User 2">
+                    <div class="comment-content">
+                        <p><strong>James Bolt</strong>: Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                        <div class="comment-actions">
+                            <span>Like</span> | <span>Reply</span> | <span>4 hours ago</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <footer>
+                <button>Previous</button>
+                <button>Next</button>
+            </footer>
+        </div>
     </section>
-
 </body>
 </html>
