@@ -7,12 +7,13 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
 }
 
 header {
-    background-color: #f2f2f2;
     padding: 20px 0;
     border-bottom: 1px solid #ddd;
+    background-color: #fff;
 }
 
 .navbar {
@@ -74,93 +75,149 @@ nav ul li a.active {
     color: #333;
 }
 
-.nav a:hover {
-    text-decoration: underline;
+/* CEO Profile Section */
+.ceo-profile {
+    background-color: #7e5ad0;
+    padding: 20px 20px;
+    color: white;
+    max-width: 1250px;
+    margin: 0 auto; /* Center the section horizontally */
   }
   
-  .container {
+  .ceo-info {
     display: flex;
+    max-width: 1170px;
+    margin: 0 auto;
+    align-items: center;
   }
   
-  .left-column {
+  .ceo-image {
+    width: 150px;
+    height: 150px;
+    margin-right: 20px;
+    object-fit: cover;
+    background-color: #e0e0e0;
+    align-self: center; 
+  }
+  
+  .ceo-details {
+    flex-grow: 1;
+    text-align: left; 
+  }
+  
+  .ceo-details h2 {
+    margin-bottom: 5px;
+    font-size: 32px;
+    color: #fff;
+  }
+  
+  .ceo-details h1 {
+    margin-bottom: 5px;
+    font-size: 15px;
+    color: #fff;
+  }
+
+  .ceo-position {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 10px;
+  }
+  
+  .ceo-details p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #000000;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+    margin-right: 15px;
+    display: flex; 
+    justify-content: center; 
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    display: inline-block;
+  }
+  
+  .social-icons img {
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+  }
+  
+/* Main Content Section */
+.main-content {
+    padding: 20px;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column {
     width: 20%;
     padding: 10px;
-  }
-  
-  .right-column {
+}
+
+.right-column {
     width: 80%;
     padding: 10px;
-  }
-  
-  .profile-box img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-  }
-  
-  .social-buttons {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .categories,
-  .important-links {
-    margin-bottom: 20px;
-  }
-  
-  .categories input {
-    margin-right: 10px;
-  }
-  
-  .post img,
-  .full-blog img {
+}
+
+.post img,
+.full-blog img {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-  }
-  
-  .post,
-  .full-blog {
+}
+
+.post,
+.full-blog {
     margin-bottom: 30px;
-  }
-  
-  .related-posts {
+}
+
+.related-posts {
     display: flex;
     gap: 20px;
-  }
-  
-  .related-posts .post {
+}
+
+.related-posts .post {
     flex: 1;
-  }
-  
-  footer {
+}
+
+footer {
     margin-top: 50px;
     text-align: center;
-  }
-  
-  footer button {
+}
+
+footer button {
     margin: 5px;
-  }
-  
-  /* Specific to Blog Details */
-  .comments-section {
+}
+
+/* Specific to Blog Details */
+.comments-section {
     margin-top: 30px;
-  }
-  
-  .comment {
+}
+
+.comment {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
-  }
-  
-  .comment img {
+}
+
+.comment img {
     width: 50px;
     height: 50px;
     border-radius: 50%;
-  }
-  
-  .editor-box textarea {
+}
+
+.editor-box textarea {
     width: 100%;
     height: 100px;
     margin-bottom: 10px;
-  }  
+}
