@@ -78,10 +78,11 @@
         <div class="right-column">
             <div class="post">
                 <img src="images/blog-image.jpg" class="post-img" alt="Blog Photo">
-				<div>
-					<span class="post-tag">Latest Post</span>
-					<span class="post-category">LEADERSHIP</span>
-				</div>
+				<div class="latest-post-container">
+					<div class="arrow"></div>
+					<div class="latest-post-text">Latest Post</div>
+					<button class="leadership-button">Leadership</button>
+				  </div>
 
                 <h2 class="post-title">You Haven't Hit Your Peak Yet!</h2>
 				
@@ -90,11 +91,21 @@
 					At age 27, Harvey had purchased and was president of a small, failing envelope company— the MackayMitchell Envelope Company—that later grew into a $100 million business. At that time, YPO would boot you out when you turned 49 because, after all, it was the Young President’s Organization. When Harvey was getting close to that age,
 				</p>
                 <a href="detail.html" class="read-more">Read Full Article</a>
-                <div class="post-interaction">
-                    <a href="#" class="post-icons"><img src="images\icon-comment.png" alt="Comment"></a>
-            		<a href="#" class="post-icons"><img src="images\icon-heart.png" alt="Like"></a>
-            		<a href="#" class="post-icons"><img src="images\icon-share.png" alt="Share"></a>
-                </div>
+                <div class="interaction-bar">
+					<div class="interaction-item-main">
+					  <div class="interaction-item">
+						<div class="icon"><img src="images/icon-comment.png" alt=""></div>
+						<div class="count">10</div>
+					  </div>
+					  <div class="interaction-item">
+						<div class="icon"><img src="images/icon-heart.png" alt=""></div>
+						<div class="count">10</div>
+					  </div>
+					</div>
+					<div class="share-button">
+					  <span class="icon"><img src="images/icon-share.png" alt=""></span>
+					</div>
+				  </div>
 
 				<div class="comment-section">
 					<div class="comment">
@@ -143,14 +154,15 @@
 				  </div>		
             </div>
         
-            	  
-        
             <!-- Related Posts Section -->
             <div class="related-posts">
                 <div class="post">
                     <img src="images/rblog-1.jpg" alt="Related Post 1">
-                    <span class="post-category">Leadership</span>
-                    <h4>7 Secrets For Leadership Success</h4>
+					<div class="post-meta">
+						<span class="leadership-button-posts">LEADERSHIP</span>
+						<span>5 days ago / 3 min read</span>
+					</div>
+					<h4>7 Secrets For Leadership Success</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
                     <a href="#" class="read-more">Read More</a>
                     <div class="post-interaction">

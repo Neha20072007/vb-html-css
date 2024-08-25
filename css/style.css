@@ -679,3 +679,92 @@ nav ul li a.active {
 .show-more a:hover {
     text-decoration: underline;
 }
+
+.interaction-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+}
+
+.interaction-item-main {
+    display: flex;
+}
+
+.interaction-item {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.interaction-item .icon img {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.interaction-item .count {
+    font-size: 0.8rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.share-button {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.share-button .icon {
+    font-size: 1em;
+}
+
+.latest-post-container {
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    gap: 8px;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 8px solid black;
+    margin-right: 5px;
+}
+
+.latest-post-text {
+    font-size: 14px;
+    color: black;
+    margin-right: 10px;
+}
+
+.leadership-button {
+    background-color: #06357c;
+    color: white;
+    font-size: 10px;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: none;
+}
+
+
+.post-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.post-meta span {
+    display: inline-block;
+}
