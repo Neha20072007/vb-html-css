@@ -402,21 +402,21 @@ nav ul li a.active {
   }
   
   .comment {
-    margin-bottom: 15px; /* Space between comments */
-    padding: 10px; /* Padding for each comment */
-    border-radius: 5px; /* Rounded corners */
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px; 
   }
   
   .comment-header {
-    display: flex; /* Align profile image and name in a row */
-    align-items: center; /* Vertically align items */
-    margin-bottom: 5px; /* Space between header and body */
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
   }
   
   .profile-img {
-    width: 50px; /* Reduced width of the profile image */
-    height: 50px; /* Reduced height of the profile image */
-    margin-right: 10px; /* Space between image and name */
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
 }
   
   /*Comment Section*/
@@ -578,15 +578,15 @@ nav ul li a.active {
     display: block; /* Removes bottom space/gap that can appear under images */
 }
 
-/* Comment Section Styles */
-.comments-section {
+/* User Comment Section Styles */
+.user-comments-section {
     margin-top: 20px;
     padding: 15px;
     border-top: 1px solid #e0e0e0;
     background-color: #fff;
 }
 
-.comments-section h3 {
+.user-comments-section h3 {
     font-size: 18px;
     color: #333;
     margin-bottom: 20px;
@@ -610,7 +610,7 @@ nav ul li a.active {
     outline: none;
 }
 
-.comment {
+.user-comment {
     display: flex;
     align-items: flex-start;
     background-color: #f9f9f9;
@@ -649,7 +649,7 @@ nav ul li a.active {
     color: #999;
 }
 
-.comment-text {
+.user-comment-text {
     font-size: 14px;
     color: #555;
     margin-top: 5px;
