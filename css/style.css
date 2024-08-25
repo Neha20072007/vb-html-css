@@ -282,7 +282,7 @@ nav ul li a.active {
 .post-img {
     width: 100%;
     height: auto;
-    margin-bottom: 10px;
+    display: block;
 }
 
 .post-title {
@@ -303,6 +303,12 @@ nav ul li a.active {
     color: #999;
     margin-bottom: 20px;
 }
+
+.post-tag {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+  }
 
 .post h2 {
     font-size: 28px;
@@ -348,6 +354,7 @@ nav ul li a.active {
     margin-top: 20px;
     margin-right: 5px;
     display: inline-block;
+    cursor: pointer;
 }
 
 .post-icons a {
@@ -363,7 +370,7 @@ nav ul li a.active {
   .post-interactions {
     display: flex; /* Arrange buttons horizontally */
     justify-content: space-between; /* Distribute buttons evenly */
-    align-items: center; /* Align buttons vertically */
+    align-items: right; /* Align buttons vertically */
   }
   
   .post-interactions span { /* Target comment, like, share elements */
