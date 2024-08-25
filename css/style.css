@@ -396,38 +396,44 @@ nav ul li a.active {
     }
 }
 
-/* Pagination Styles */
+/* Pagination */
 .pagination {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
-.pagination a {
-    color: #333;
+.pagination a, .pagination span {
+    color: #999;
     padding: 10px 15px;
-    text-decoration: none;
-    border: 1px solid #ddd;
     margin: 0 5px;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.pagination a:hover {
-    background-color: #f2f2f2;
-    border-color: #bbb;
-}
-
-.pagination a.active {
-    background-color: #007bff;
-    color: white;
-    border: 1px solid #007bff;
-}
-
-.pagination a.disabled {
-    color: #ddd;
-    pointer-events: none;
+    text-decoration: none;
+    border-radius: 50%;
     border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pagination a.active, .pagination span.current {
+    background-color: #1e90ff; /* Blue background for active item */
+    color: white;
+    border: 1px solid #1e90ff; 
+}
+
+.pagination a:hover:not(.active), .pagination span:hover:not(.current) {
+    background-color: #f0f0f0; 
+}
+
+.pagination .next {
+    background: none;
+    border: none;
+    color: #1e90ff;
+    font-weight: bold;
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.pagination .next:hover {
+    color: #0f5bb5; 
 }
