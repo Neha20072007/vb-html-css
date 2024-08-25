@@ -2,87 +2,134 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>VB HTML and CSS Final Assignment | Details</title>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 	<header>
-        <div class="navbar">
-            <h1 class="site-title">CEO BLOG</h1>
-            <nav>
-                <ul>
-                    <li><a href="#" class="active">Blog</a></li>
-                    <li><a href="#">Links</a></li>
-                    <li><a href="#">Links</a></li>
-                    <li><a href="#">Links</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-<section class="blog-header-secction">
-	<img src="images/blog-header.jpg" alt="Blog Photo" class="blog-header">
-</section>
-	
-	  <div class="container">
-		<aside class="left-column">	
-		  <div class="categories">
-			<h2>Categories</h2>
-			<form>
-				<label><input type="radio" name="category" value="Communication"> Communication</label><br>
-				<label><input type="radio" name="category" value="Leadership"> Leadership</label><br>
-				<label><input type="radio" name="category" value="Habits"> Habits</label><br>
-				<label><input type="radio" name="category" value="Emotional States"> Emotional States</label><br>
-				<label><input type="radio" name="category" value="Inspiration"> Inspiration</label><br>
-				<label><input type="radio" name="category" value="Journaling"> Journaling</label><br>
-				<label><input type="radio" name="category" value="Travel"> Travel</label><br>
-				<label><input type="radio" name="category" value="Nature"> Nature</label><br>
-			</form>
-		  </div>
-		</aside>
-	
-		<main class="right-column">
-		  <div class="full-blog">
-			<h2>Blog Title</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero...</p>
-		  </div>
-	
-		  <div class="comments-section">
-			<h3>Comments</h3>
-			<div class="comment">
-			  <img src="images/user.jpg" alt="User Photo">
-			  <div>
-				<p><strong>Username</strong> - 1 hour ago</p>
-				<p>Lorem ipsum dolor sit amet...</p>
-			  </div>
+		<div class="navbar">
+			<h1 class="site-title">CEO BLOG</h1>
+			<nav>
+				<ul>
+					<li><a href="#" class="active">Blog</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Links</a></li>
+					<li><a href="#">Links</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Full-Width Blog Header Image Section -->
+	<section class="blog-header-section">
+		<img src="images/blog-header.jpg" alt="Blog Photo" class="blog-header">
+	</section>
+
+	<!-- Main Content Section -->
+	<section class="main-content">
+		<div class="left-column">
+			<!-- Categories Section -->
+			<div class="categories">
+				<h1>Categories</h1>
+				<form>
+					<label><input type="radio" name="category" value="Communication"> Communication</label><br>
+					<label><input type="radio" name="category" value="Leadership"> Leadership</label><br>
+					<label><input type="radio" name="category" value="Habits"> Habits</label><br>
+					<label><input type="radio" name="category" value="Emotional States"> Emotional States</label><br>
+					<label><input type="radio" name="category" value="Inspiration"> Inspiration</label><br>
+					<label><input type="radio" name="category" value="Journaling"> Journaling</label><br>
+					<label><input type="radio" name="category" value="Travel"> Travel</label><br>
+					<label><input type="radio" name="category" value="Nature"> Nature</label><br>
+				</form>
 			</div>
-	
-			<div class="editor-box">
-			  <textarea placeholder="Add your comment..."></textarea>
-			  <button>Submit</button>
+		</div>
+
+		<div class="right-column">
+			<!-- Blog Post Content -->
+			<div class="post">
+				<p class="latest-post">-> Latest Post</p>
+				<div class="post-category">LEADERSHIP</div>
+				<h2 class="post-title">You Haven't Hit Your Peak Yet!</h2>
+				<p class="post-content">
+					My friend Harvey Mackay has a brand new book out this month titled "You Haven't Hit Your Peak Yet!" The title is a consistent message from Harvey's work that goes all the way back to when I first met him through the Young President's Organization (YPO).
+				</p>
+				<a href="detail.html" class="read-more">Read Full Article</a>
+				<div class="post-interaction">
+					<a href="#" class="post-icons"><img src="images/icon-comment.png" alt="Comment"></a>
+					<a href="#" class="post-icons"><img src="images/icon-heart.png" alt="Like"></a>
+					<a href="#" class="post-icons"><img src="images/icon-share.png" alt="Share"></a>
+				</div>
 			</div>
-		  </div>
-	
-		  <div class="top-comments">
-			<h4>Top Comments</h4>
-			<div class="comment">
-			  <img src="images/user.jpg" alt="User Photo">
-			  <div>
-				<p><strong>Username</strong> - 2 hours ago</p>
-				<p>Lorem ipsum dolor sit amet...</p>
-			  </div>
+
+			<!-- Comment Section -->
+			<div class="comment-section">
+				<div class="editor-box">
+					<textarea placeholder="Add your comment..."></textarea>
+					<button>Submit</button>
+				</div>
+				
+				<div class="comment">
+					<div class="comment-header">
+						<img src="images/johne.jpg" alt="User Profile" class="profile-img">
+						<strong>Masium Jones</strong>
+					</div>
+					<div class="comment-body">
+						Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores.
+					</div>
+					<div class="comment-footer">
+						<a href="#">Like</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">More</a>
+						<span class="comment-time">4 hours ago</span>
+					</div>
+					
+					<!-- Reply Section -->
+					<div class="reply-section">
+						<div class="reply">
+							<div class="comment-header">
+								<img src="images/james.jpg" alt="User Profile" class="profile-img">
+								<strong>James Bolt</strong>
+							</div>
+							<div class="comment-body">
+								Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam.
+							</div>
+							<div class="comment-footer">
+								<a href="#">Like</a> <a href="#">Reply</a> <a href="#">Share</a> <a href="#">More</a>
+								<span class="comment-time">4 hours ago</span>
+							</div>
+						</div>
+					</div>
+				</div>	
 			</div>
-	
-			<div class="comment">
-			  <img src="images/user.jpg" alt="User Photo">
-			  <div>
-				<p><strong>Username</strong> - 5 hours ago</p>
-				<p>Lorem ipsum dolor sit amet...</p>
-			  </div>
+
+			<!-- Related Posts Section -->
+			<div class="related-posts">
+				<div class="post">
+					<img src="images/rblog-1.jpg" alt="Related Post 1">
+					<span class="post-category">Leadership</span>
+					<h4>7 Secrets For Leadership Success</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
+					<a href="#" class="read-more">Read More</a>
+					<div class="post-interaction">
+						<a href="#" class="post-icons"><img src="images/icon-comment.png" alt="Comment"></a>
+						<a href="#" class="post-icons"><img src="images/icon-heart.png" alt="Like"></a>
+						<a href="#" class="post-icons"><img src="images/icon-share.png" alt="Share"></a>
+					</div>
+				</div>
+				<div class="post">
+					<img src="images/rblog-2.jpg" alt="Related Post 2">
+					<span class="post-category">Habit</span>
+					<h4>Est dignissimos perspiciatis nam eos</h4>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio...</p>
+					<a href="#" class="read-more">Read More</a>
+					<div class="post-interaction">
+						<a href="#" class="post-icons"><img src="images/icon-comment.png" alt="Comment"></a>
+						<a href="#" class="post-icons"><img src="images/icon-heart.png" alt="Like"></a>
+						<a href="#" class="post-icons"><img src="images/icon-share.png" alt="Share"></a>
+					</div>
+				</div>
 			</div>
-		  </div>
-		</main>
-	  </div>
+		</div>
+	</section>
 </body>
 </html>
