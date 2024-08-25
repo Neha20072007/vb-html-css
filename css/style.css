@@ -176,7 +176,7 @@ nav ul li a.active {
     max-width: 250px;
 }
 
-.categories h1, .important-links h1 {
+.categories h1{
     color: #333;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
@@ -188,9 +188,72 @@ nav ul li a.active {
     color: #333;
 }
 
-.important-links {
-    margin-top: 20px;
-  }
+/* Important Links Container */
+.important-links-container {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 300px; /* adjust as needed */
+    color: #333;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.important-links-container h1 {
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Content Scrollable Area */
+.important-links-content {
+    max-height: 400px; /* Adjust height to your needs */
+    overflow-y: auto;
+    padding-right: 10px; /* Allows some space for scrollbar */
+}
+
+/* Individual Link Box */
+.important-link {
+    margin-bottom: 20px;
+}
+
+.important-link h4 {
+    font-size: 16px;
+    color: #86d3ff;
+    margin-bottom: 5px;
+}
+
+.important-link p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+/* Webpage Link */
+.important-link .link {
+    font-size: 14px;
+    color: #86d3ff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.important-link .link i {
+    margin-right: 5px;
+}
+
+/* Scrollbar Styling */
+.important-links-content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.important-links-content::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+    border-radius: 4px;
+}
 
 .right-column {
     flex: 4;
@@ -515,36 +578,94 @@ nav ul li a.active {
     display: block; /* Removes bottom space/gap that can appear under images */
 }
 
-.comment-box {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 10px;
+/* Comment Section Styles */
+.comments-section {
+    margin-top: 20px;
+    padding: 15px;
+    border-top: 1px solid #e0e0e0;
+    background-color: #fff;
+}
+
+.comments-section h3 {
+    font-size: 18px;
+    color: #333;
     margin-bottom: 20px;
-  }
-  
-  .comment-box textarea {
-    width: 100%;
-    height: 100px;
-    border: none;
-    padding: 10px;
-    resize: vertical; /* Allow resizing vertically */
-  }
-  
-  .comment-box-actions {
     display: flex;
-    justify-content: flex-end;
-    margin-top: 10px;
-  }
-  
-  .comment-box-actions button {
-    background-color: #f0f2f5;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    cursor: pointer;
-    margin-left: 5px; /* Add spacing between buttons */
-  }
-  
-  .comment-box-actions button:hover {
-    background-color: #e0e2e5;
-  }
+    align-items: center;
+}
+
+.response-box {
+    margin-bottom: 20px;
+}
+
+.response-box textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+    color: #333;
+    outline: none;
+}
+
+.comment {
+    display: flex;
+    align-items: flex-start;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    font-size: 14px;
+    margin: 0;
+    color: #333;
+}
+
+.time-posted {
+    font-size: 12px;
+    color: #999;
+}
+
+.comment-text {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}
+
+.show-more {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.show-more a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.show-more a:hover {
+    text-decoration: underline;
+}
