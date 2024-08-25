@@ -501,3 +501,16 @@ nav ul li a.active {
 .pagination .next:hover {
     color: #0f5bb5; 
 }
+
+.blog-header-section {
+    width: 100%; /* Make sure the section is 100% width */
+    margin: 0; /* Remove any margin */
+    padding: 0; /* Remove any padding */
+    overflow: hidden; /* Prevents scrollbars from showing up */
+}
+
+.blog-header {
+    width: 100%; /* Makes the image fill the full width of its container */
+    height: auto; /* Maintains the aspect ratio of the image */
+    display: block; /* Removes bottom space/gap that can appear under images */
+}
