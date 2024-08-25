@@ -201,7 +201,6 @@ nav ul li a.active {
 }
 
 /* Blog Post Section */
-
 .post {
     display: flex;
     flex-wrap: wrap;
@@ -289,39 +288,65 @@ nav ul li a.active {
     background-color: #0056b3;
 }
 
-.comments-section {
-    margin-top: 30px;
-}
-
-.comment {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.comment img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.comment-content {
+.comment-section {
+    max-height: 300px; /* Set the height of the scrollable area */
+    overflow-y: auto;  /* Enable vertical scrolling */
     background-color: #f2f2f2;
-    padding: 10px;
-    border-radius: 4px;
-    width: 100%;
-}
-
-.comment-content p {
-    margin: 0 0 5px;
-    font-size: 14px;
-    color: #333;
-}
-
-.comment-actions {
-    font-size: 12px;
-    color: #888;
-}
+    padding: 15px;  /* Padding inside the scrollable area */
+    background-color: #f2f2f2;
+  }
+  
+  .comment {
+    margin-bottom: 15px; /* Space between comments */
+    padding: 10px; /* Padding for each comment */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  }
+  
+  .comment-header {
+    display: flex; /* Align profile image and name in a row */
+    align-items: center; /* Vertically align items */
+    margin-bottom: 5px; /* Space between header and body */
+  }
+  
+  .profile-img {
+    width: 10px; /* Reduced width of the profile image */
+    height: 10px; /* Reduced height of the profile image */
+    margin-right: 10px; /* Space between image and name */
+  }
+  
+  /*Comment Section*/
+  .comment-body {
+    margin-bottom: 10px; /* Space between body and footer */
+  }
+  
+  .comment-footer {
+    font-size: 0.9em; /* Smaller font size for footer links */
+    color: #777; /* Grey color for footer links */
+  }
+  
+  .comment-footer a {
+    margin-right: 10px; /* Space between footer links */
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Blue color for links */
+  }
+  
+  .comment-footer a:hover {
+    text-decoration: underline; /* Underline on hover */
+  }
+  
+  .comment-time {
+    float: right; /* Align time to the right */
+    color: #aaa; /* Light grey color for time */
+  }
+  
+  .reply-section {
+    margin-left: 50px; /* Indentation for replies */
+    margin-top: 10px; /* Space above replies */
+     /* Left border for reply indentation */
+    padding-left: 10px; /* Padding inside reply section */
+  }
+  
 
 /* Related Posts Section */
 .related-posts {
