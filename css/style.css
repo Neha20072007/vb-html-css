@@ -194,7 +194,7 @@ nav ul li a.active {
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 300px; /* adjust as needed */
+    max-width: 250px; /* adjust as needed */
     color: #333;
     border-bottom: 1px solid #ddd;
     padding-bottom: 20px;
