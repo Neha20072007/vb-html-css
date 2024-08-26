@@ -817,3 +817,13 @@ nav ul li a.active {
     color: #007bff;
     margin-top: 5px;
 }
+
+.recommended-blog {
+    display: flex;
+    justify-content: center; /* Centers the item horizontally */
+    align-items: center; /* Centers the item vertically */
+}
+
+.recommended-blog h2 {
+    margin: 0; /* Remove default margins to avoid extra spacing */
+}
