@@ -590,7 +590,7 @@ nav ul li a.active {
 
 /* User Comment Section Styles */
 .user-comments-section {
-    margin-top: 20px;
+    margin-top: 223px;
     padding: 15px;
     border-top: 1px solid #e0e0e0;
     background-color: #fff;
@@ -767,4 +767,45 @@ nav ul li a.active {
 
 .post-meta span {
     display: inline-block;
+}
+.next-blog-column {
+    position: relative; /* Add this to make the next blog box float correctly */
+    left: 820px;
+}
+
+.next-blog {
+    width: 250px; /* Set a smaller width for the next blog box */
+    position: absolute; /* Use absolute positioning */
+    right: 0; /* Position it to the right */
+    top: 0; /* Adjust as needed */
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align content to the start */
+}
+
+.next-blog img {
+    max-width: 60px; /* Adjust size of the image */
+    margin-right: 10px; /* Space between image and text */
+}
+
+.next-blog-info h4 {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 0 5px;
+}
+
+.next-blog-info p {
+    margin: 0;
+    font-size: 12px; /* Smaller font size */
+    color: #666;
+}
+
+.next-blog .read-more {
+    font-size: 12px; /* Smaller font size for the link */
+    text-decoration: none;
+    color: #007bff;
+    margin-top: 5px;
 }
